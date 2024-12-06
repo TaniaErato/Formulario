@@ -13,16 +13,10 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    lastUser: {
-        name: {
-            type: String,
-        },
-        password: {
-            type: String,
-        },
-        email: {
-            type: String,
-        }
-    }
+    roll: {
+        type: String,
+        default: "cliente"
+    },
+    
 });
 export const UserModel = model("users", UserSchema);
